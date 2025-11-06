@@ -1,0 +1,24 @@
+body {
+
+background-color: #3d0b0f;
+color:rgb(255, 246, 245);
+
+}
+
+@font-face {
+    font-family: "monocraft";
+    src: url(Monocraft.woff) format(woff);
+}
+
+h1 
+{
+    font-family: "monocraft", Arial, sans-serif;
+    justify-content: center;
+    font-size: 50px;
+}
+
+#title {
+
+    #center
+
+}
