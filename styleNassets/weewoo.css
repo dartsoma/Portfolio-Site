@@ -1,12 +1,19 @@
 html {
     height: 250%;
+    scroll-behavior: smooth;
     background-image: black;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #2B0707, #1f0606, #000000);
 }
 
 body {
 
     height: 100%;
     margin: 0;
+
+    /* I have no idea why but putting this twice stops me from running into white backgrounds when scrolling to the bottom */
+
     background-repeat: no-repeat;
     background-image: linear-gradient(to bottom, #2B0707, #1f0606, #000000);
     font-family: "Inter", sans-serif;
@@ -20,18 +27,19 @@ body {
 
 
 nav {
-    list-style-type: none;
+ 
     top: 0;
     width: 100%;
     position: fixed;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #1f060671;
-
+    background-color: #14040471;
+    backdrop-filter:blur(8px)
 }
 
 ul {
+       list-style-type: none;
     margin: 0;
     padding: 0;
     padding-left: 300px;
@@ -69,6 +77,10 @@ ul li a:active {
     color: #b69797;
 }
 
+#title {
+       padding-top:360px;
+       padding-bottom:360px;
+}
 
 #title h1 {
     font-size: 100px;
@@ -76,15 +88,53 @@ ul li a:active {
     text-align: center;
     padding-right: 80px;
     padding-left: 80px;
-    padding-bottom: 0px;
+    padding-bottom: 35px;
     margin-bottom: 0px;
 }
 
 #title h2 {
-    font-size: 35px;
+    font-size: 40px;
     color: white;
     text-align: center;
     padding-right: 80px;
     padding-left: 80px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    transition: padding-bottom 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+
+#title h2:hover {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 35px;
     margin-top: 0px;
 }
+
+hr {
+   padding-top: 5px;
+   width: 30%;
+   border:none;
+   margin-top: 20px;
+   background-color: rgb(252, 252, 252);
+}
+
+#subHeader {
+    color: white;
+    padding-top: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 20px;
+    float: left;
+}
+
+#subHeader h1 {
+
+
+    font-size: 50px;
+    text-decoration: underline salmon;
+}
+
