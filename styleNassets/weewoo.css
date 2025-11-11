@@ -50,11 +50,11 @@ ul {
 
 
 
-#right {
+.right {
     float: right;
 }
 
-#left {
+.left {
     float: left;
 }
 
@@ -77,12 +77,12 @@ ul li a:active {
     color: #b69797;
 }
 
-#title {
+.title {
        padding-top:360px;
        padding-bottom:360px;
 }
 
-#title h1 {
+.title h1 {
     font-size: 100px;
     color: white;
     text-align: center;
@@ -92,22 +92,41 @@ ul li a:active {
     margin-bottom: 0px;
 }
 
-#title h2 {
+.title h2 {
     font-size: 40px;
     color: white;
     text-align: center;
     padding-right: 80px;
     padding-left: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     margin-top: 0px;
-    transition: padding-bottom 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    background: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    
+    color: transparent;
+    transition: padding-bottom 0.3s ease-in-out, font-size 0.3s ease-in-out, background 1s ease-in-out, 0.3s text-shadow ease-in;
 }
 
 
-#title h2:hover {
+.title h2:hover {
     font-size: 50px;
     color: white;
     text-align: center;
+
+    text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.127),
+    0 0 20px rgba(255, 255, 255, 0.127),
+    0 0 30px rgba(255, 255, 255, 0.127),
+    0 0 40px rgba(255, 255, 255, 0.127);
+    
+     background: linear-gradient(to right, #ffffff, #8f8f8f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     padding-right: 80px;
     padding-left: 80px;
     padding-bottom: 35px;
@@ -117,24 +136,24 @@ ul li a:active {
 hr {
    padding-top: 5px;
    width: 30%;
-   border:none;
+   border: none;
    margin-top: 20px;
    background-color: rgb(252, 252, 252);
 }
 
-#subHeader {
+.subHeader {
     color: white;
+    text-align: center;
+    
     padding-top: 100px;
     padding-left: 300px;
     padding-right: 300px;
     font-size: 20px;
-    float: left;
+
 }
 
-#subHeader h1 {
+.subHeader h1 {
 
-
-    font-size: 50px;
-    text-decoration: underline salmon;
 }
+
 
