@@ -7,21 +7,8 @@ html {
     background-image: linear-gradient(to bottom, #2B0707, #1f0606, #000000);
 }
 
-#aspect {
-
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    /* Force 16:9 aspect ratio */
-    max-width: 177.78vh; /* 16/9 = 1.7778 */
-    max-height: 56.25vw; /* 9/16 = 0.5625 */
-    margin: 0 auto;
-    overflow: hidden;
-
-}
-
 body {
-
+    font-size: 20px;
     height: 100%;
     margin: 0;
 
@@ -39,9 +26,12 @@ body {
 }
 
 
+
+
 nav {
  
     top: 0;
+    left: 0;
     width: 100%;
     position: fixed;
     margin: 0;
@@ -91,18 +81,18 @@ ul li a:active {
 }
 
 .title {
-       padding-bottom:360px;
+       padding-bottom: 10.5%;
 }
 
 .title h1 {
-    padding-top:20%;
-    font-size: 100px;
+    padding-top:15%;
+    font-size: 500%;
     color: white;
     text-align: center;
     padding-right: 80px;
     padding-left: 80px;
-    padding-bottom: 35px;
-    margin-bottom: 0px;
+    padding-bottom: 1%;
+    margin-bottom: 0%;
 }
 
 .title h2 {
@@ -113,8 +103,8 @@ ul li a:active {
     text-align: center;
     padding-right: 80px;
     padding-left: 80px;
-    padding-bottom: 0px;
-    margin-top: 0px;
+    padding-bottom: 0%;
+    margin-top: 0%;
     background: rgb(255, 255, 255);
     -webkit-background-clip: text;
     background-clip: text;
@@ -181,7 +171,7 @@ hr {
 #githubLogo {
 
     position: absolute;
-    top: 73%;
+    top: 64.8%;
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);
@@ -213,7 +203,7 @@ hr {
     color: white;
     text-align: center;
     
-    padding-top: 100px;
+    padding-top: 10%;
     padding-left: 300px;
     padding-right: 300px;
     font-size: 20px;
