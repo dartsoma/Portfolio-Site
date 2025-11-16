@@ -7,6 +7,19 @@ html {
     background-image: linear-gradient(to bottom, #2B0707, #1f0606, #000000);
 }
 
+#aspect {
+
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* Force 16:9 aspect ratio */
+    max-width: 177.78vh; /* 16/9 = 1.7778 */
+    max-height: 56.25vw; /* 9/16 = 0.5625 */
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
 body {
 
     height: 100%;
@@ -78,11 +91,11 @@ ul li a:active {
 }
 
 .title {
-       padding-top:360px;
        padding-bottom:360px;
 }
 
 .title h1 {
+    padding-top:20%;
     font-size: 100px;
     color: white;
     text-align: center;
@@ -131,7 +144,7 @@ ul li a:active {
 
     padding-right: 80px;
     padding-left: 80px;
-    padding-bottom: 35px;
+    padding-bottom: 1.45%;
     margin-top: 0px;
 }
 
@@ -141,7 +154,7 @@ hr {
    width: 30%;
    z-index: 2;
    border: none;
-   margin-top: 20px;
+   margin-top: 2%;
    background-color: rgb(252, 252, 252);
 }
 
@@ -149,6 +162,8 @@ hr {
 .mask{
   position: absolute;
   mask-mode: luminance;
+  top: 80%;
+  left: 50%;
   mask-image: url('/assets/lossless1.svg');
   mask-repeat: no-repeat;
   mask-size: 300px 300px;
@@ -166,7 +181,7 @@ hr {
 #githubLogo {
 
     position: absolute;
-    top: 77%;
+    top: 73%;
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);
