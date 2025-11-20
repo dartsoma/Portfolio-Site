@@ -1,15 +1,14 @@
 html {
-    height: 250%;
+    
+    height: 250vh;
     scroll-behavior: smooth;
     background-image: black;
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom, #2B0707, #1f0606, #000000);
+
 }
 
 body {
     font-size: 20px;
-    height: 100%;
+    height: 100vh;
     margin: 0;
 
     /* I have no idea why but putting this twice stops me from running into white backgrounds when scrolling to the bottom */
@@ -29,24 +28,22 @@ body {
 
 
 nav {
- 
+    z-index: 10;
     top: 0;
-    left: 0;
-    width: 100%;
+    width: 100vw;
     position: fixed;
-    margin: 0;
-    padding: 0;
+
     overflow: hidden;
     background-color: #14040471;
-    backdrop-filter:blur(8px)
+    backdrop-filter:blur(8px);
 }
 
 ul {
-       list-style-type: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 300px;
-    padding-right: 200px;
+    padding-left: 5vw;
+    padding-right: 5vw;
     background-color: #1f060671;
     text-align: center;
 }
@@ -66,9 +63,9 @@ ul {
 ul li a {
     display: block;
     color: white;
-    font-size: 25px;
+    font-size: 120%;
     text-align: center;
-    padding: 14px 16px;
+    padding: 2vh 2vw;
     text-decoration: none;
 }
 
@@ -81,43 +78,42 @@ ul li a:active {
 }
 
 .title {
-       padding-bottom: 10.5%;
+    position: relative;
+    padding-bottom: 20vh;
+    padding-top: 25vh;
 }
 
 .title h1 {
-    padding-top:15%;
     font-size: 500%;
     color: white;
     text-align: center;
     padding-right: 80px;
     padding-left: 80px;
-    padding-bottom: 1%;
-    margin-bottom: 0%;
+    margin-bottom: 0;
 }
 
 .title h2 {
     position: relative;
     z-index: 4;
-    font-size: 40px;
+    font-size: 200%;
     color: white;
     text-align: center;
     padding-right: 80px;
     padding-left: 80px;
-    padding-bottom: 0%;
-    margin-top: 0%;
+    padding-bottom: 0.5vh;
+    margin-top: 0vh;
     background: rgb(255, 255, 255);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
     
     color: transparent;
-    transition: padding-bottom 0.3s ease-in-out, font-size 0.3s ease-in-out, background 1s ease-in-out, 0.3s text-shadow ease-in;
+    transition: all 0.3s ease-in-out;
 }
 
 
 .title h2:hover {
-    font-size: 50px;
+    font-size: 250%;
     color: white;
     text-align: center;
 
@@ -134,52 +130,43 @@ ul li a:active {
 
     padding-right: 80px;
     padding-left: 80px;
-    padding-bottom: 1.45%;
+    padding-bottom: 0vh;
     margin-top: 0px;
 }
 
-hr {
-    position: relative;
-   padding-top: 5px;
+ .title hr {
+    margin:0;
+    padding:0;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 19vh;
+   padding-top: 0.5vh;
    width: 30%;
-   z-index: 2;
+   z-index: 3;
    border: none;
-   margin-top: 2%;
+   margin-top: 2vh;
    background-color: rgb(252, 252, 252);
+   transition: all 0.3s ease-in-out;
 }
 
 
-.mask{
-  position: absolute;
-  mask-mode: luminance;
-  top: 80%;
-  left: 50%;
-  mask-image: url('/assets/lossless1.svg');
-  mask-repeat: no-repeat;
-  mask-size: 300px 300px;
-  mask-position: center 80%;
-  transition: top 0.3s ease-in-out;
-  z-index: 3;
-}
-
-.title h2:hover ~ .mask{
-    top: 29%;
-
+.title h2:hover ~ hr{
+   bottom: 16vh;
 }
 
 
-#githubLogo {
+.title #githubLogo {
 
     position: absolute;
-    top: 64.8%;
     left: 50%;
+    bottom: 9vh;
     z-index: 1;
     transform: translate(-50%, -50%);
 
-    width: 50px;
-    height: 50px;
+    width: 4vw;
+    height: 8vh;
     filter: invert(100%);
-    transition: filter 0.3s ease-in-out;
 
     mask-mode: luminance;
     -webkit-mask-mode: luminance;
@@ -187,23 +174,23 @@ hr {
     -webkit-mask-image: url('/assets/lossless1.svg');
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
-    mask-size: 300px 300px;
-    -webkit-mask-size: 300px 300px;
-    mask-position: center 80%;
-    -webkit-mask-position: center 80%;
-    transition: all 0.3s ease-in-out;
+    mask-size: 10vh 10vw;
+    -webkit-mask-size: 10vh 10vw;
+    mask-position: center 72%;
+    -webkit-mask-position: center 72%;
+    transition: all 0.32s ease-in-out;
 }
 
 .title h2:hover ~ #githubLogo {
-    mask-position: center 51.5%;
-    -webkit-mask-position: center 51.5%;
+    mask-position: center 49%;
+    -webkit-mask-position: center 49%;
 }
 
 .subHeader {
     color: white;
     text-align: center;
     
-    padding-top: 10%;
+    padding-top: 10vh;
     padding-left: 300px;
     padding-right: 300px;
     font-size: 20px;

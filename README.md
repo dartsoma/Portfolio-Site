@@ -5,9 +5,16 @@
 
 ## Todo
 
-- Make sliding animation
 
 - Make Modal and JS script for on click
+
+## Version 0.1 Hotfix
+
+_Added_
+
+- Sliding animation + proportionality
+
+
 
 
 
