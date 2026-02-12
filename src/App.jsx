@@ -6,7 +6,6 @@ function App() {
 	return (
 		<>
 			<TopNav />
-			<h1>Placeholder</h1>
 		</>
 	);
 }

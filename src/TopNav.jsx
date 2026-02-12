@@ -6,35 +6,37 @@ import placeholder from "./assets/placeholdericon.png";
 function TopNav() {
 	return (
 		<>
-			<div className="top-nav">
-				<ol>
+
+	<div className="top-nav">
 					<div className="nav-button-container">
-						<img className="nav-button" src={placeholder} />
-						<img className="nav-button-underline" src={bracket} />
-						<li id="faq">F.A.Q</li>
-					</div>
-					<div className="nav-button-container">
-						<img className="nav-button" src={placeholder} />
-						<img className="nav-button-underline" src={bracket} />
-						<li id="models">MODELS</li>
-					</div>
-					<div className="nav-button-container">
-						<img className="nav-button" src={placeholder} />
-						<img className="nav-button-underline" src={bracket} />
-						<li id="home">HOME</li>
-					</div>
-					<div className="nav-button-container">
-						<img className="nav-button" src={placeholder} />
-						<img className="nav-button-underline" src={bracket} />
-						<li id="projects">PROJECTS</li>
-					</div>
-					<div className="nav-button-container">
-						<img className="nav-button" src={placeholder} />
-						<img className="nav-button-underline" src={bracket} />
-						<li id="contact">CONTACT</li>
-					</div>
-				</ol>
-			</div>
+					<img className="nav-button" src={placeholder} />
+					<img className="nav-button-underline" src={bracket} />
+					<h1 id="faq">F.A.Q</h1>
+				</div>
+				<div className="nav-button-container">
+					<img className="nav-button" src={placeholder} />
+					<img className="nav-button-underline" src={bracket} />
+					<h1 id="models">MODELS</h1>
+				</div>
+				<div className="nav-button-container">
+					<img className="nav-button" src={placeholder} />
+					<img className="nav-button-underline" src={bracket} />
+					<h1 id="home">HOME</h1>
+
+				</div>
+				<div className="nav-button-container">
+					<img className="nav-button" src={placeholder} />
+					<img className="nav-button-underline" src={bracket} />
+					<h1 id="projects">PROJECTS</h1>
+			
+				</div>
+				<div className="nav-button-container">
+					<img className="nav-button" src={placeholder} />
+					<img className="nav-button-underline" src={bracket} />
+				<h1 id="contact">CONTACT</h1>
+				</div>
+		</div>
+			
 		</>
 	);
 }

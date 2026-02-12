@@ -1,82 +1,86 @@
+    /* I fixed the issues with the nav bar being off center*/
+    /* From now on use rem units for everything in this file that is proportion heavy */
+    .top-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transform: translateY(5rem);
+            margin-top: 0;
+            padding-top: 0;
+    }
+
+    .nav-button-container{
+        position: relative;
+        padding-top: 0.2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
 
 
-.top-nav {
-/* don't change under any circumstances*/
+    }
+
+    .nav-button-container h1{
+        position: absolute;
+        transform: translateX(-50%);
+        text-align: center;
+        top: 0;
+        padding-top: 3rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        color: rgb(192, 192, 192);
+        transition: all 0.35s ease;
+    }
+
+
+    .nav-button-underline {
     position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 26%);
-}
+    width: 15rem;
+    height:auto;
 
-.top-nav ol {
-/* don't change under any circumstances*/
-    display: flex;
-    place-items: center;
-    
-}
+    --underline-translateX: 100px;
 
-.nav-button-container{
-    padding-top: 1.3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    transform: translate(-50%, 120%);
 
 
-}
+    /* white filter */ 
+    filter: contrast(0) brightness(1);
 
-.top-nav li{
-    transform: translate(0%, 150%);
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-decoration: none;
-    list-style-type: none;
-    text-align: center;
-    color: rgb(192, 192, 192);
-    transition: all 0.35s ease;
-}
+    transition: all 0.3s ease;
+    }
 
+    .nav-button-container .nav-button {
+    position: absolute;
+    width: 6rem;
+    height: auto;
 
-.nav-button-underline {
-position: absolute;
-width:23%;
-height:auto;
+    transform: translate(-48.6%, -50%);
+    transition: all 0.3s ease;
+    }
 
-transform: translate(-50%, 120%);
+    .nav-button:hover ~ .nav-button-underline{
+        width: 19rem;
+        transform: translate(-50%, 120%) translateY(30x);
+        filter: contrast(0) brightness(2);
+        animation-play-state: paused;
+    }
+    .nav-button:hover ~ h1 {
+        transform: translate(-50%, 20%);
+        font-size: 1.8rem;
+        color: white;
+        animation-play-state: paused;
+    }
 
+    .nav-button:hover{
+        width: 8rem;
+        filter: contrast(0) brightness(0.3);
+        animation-play-state: paused;
+    }
 
-/* white filter */ 
-filter: contrast(0) brightness(1);
-
-transition: all 0.3s ease;
-}
-
-.nav-button-container .nav-button {
-position: absolute;
-width: 10%;
-height: auto;
-
-transform: translate(-48.6%, -50%);
-transition: all 0.3s ease;
-}
-
-.nav-button:hover ~ .nav-button-underline{
-    width: 26%;
-    transform: translate(-50%, 120%) translateY(30px);
-    filter: contrast(0) brightness(2);
-}
-.nav-button:hover ~ li {
-    transform: translate(0%, 150%) translateY(35px);
-    font-size: 1.8rem;
-    color: white;
-}
-
-.nav-button:hover {
-    width: 12%;
-    filter: contrast(0) brightness(0.3);
-
-}
-
-.nav-button:active {
-    width: 12%;
-    filter: contrast(0) brightness(0.6);
-
-}
+    .nav-button:active{
+        width: 5.5rem;
+        filter: contrast(0) brightness(0.6);
+        animation-play-state: paused;
+    }
