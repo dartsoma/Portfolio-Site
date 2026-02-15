@@ -10,6 +10,18 @@
         transform: translateY(5rem);
             margin-top: 0;
             padding-top: 0;
+
+              user-select: none;
+
+              /*anti highlight
+  /* Firefox prefix */
+  -moz-user-select: none;
+  /* Webkit (Safari, Chrome) and Opera prefix */
+  -webkit-user-select: none;
+  /* IE/Edge prefix */
+  -ms-user-select: none;
+  /* Konqueror HTML prefix */
+  -khtml-user-select: none;
     }
 
     .nav-button-container{
@@ -27,22 +39,23 @@
         text-align: center;
         top: 0;
         padding-top: 3rem;
-        font-size: 1.6rem;
+        font-size: 1rem;
         font-weight: 600;
+        text-shadow: 2px 2px #1d1a1a;
 
         color: rgb(192, 192, 192);
-        transition: all 0.35s ease;
+        transition: all 0.3s ease;
     }
 
 
-    .nav-button-underline {
+    .nav-underline {
     position: absolute;
-    width: 15rem;
+    width: 12rem;
     height:auto;
 
     --underline-translateX: 100px;
 
-    transform: translate(-50%, 120%);
+    transform: translate(-50%, 120%);   
 
 
     /* white filter */ 
@@ -51,36 +64,68 @@
     transition: all 0.3s ease;
     }
 
-    .nav-button-container .nav-button {
+    .nav-button {
     position: absolute;
-    width: 6rem;
+    width: 5rem;
     height: auto;
 
     transform: translate(-48.6%, -50%);
     transition: all 0.3s ease;
     }
 
-    .nav-button:hover ~ .nav-button-underline{
-        width: 19rem;
-        transform: translate(-50%, 120%) translateY(30x);
+    .nav-button:hover ~ .nav-underline{
+        width: 10rem;
+        transform: translate(-50%, 120%) translateY(10px);
         filter: contrast(0) brightness(2);
-        animation-play-state: paused;
+
     }
+
     .nav-button:hover ~ h1 {
-        transform: translate(-50%, 20%);
-        font-size: 1.8rem;
+        transform: translate(-50%, -5%);
+        font-size: 1.3rem;
         color: white;
-        animation-play-state: paused;
-    }
 
+    }
+    
     .nav-button:hover{
-        width: 8rem;
+        width: 4rem;
         filter: contrast(0) brightness(0.3);
-        animation-play-state: paused;
+
     }
 
-    .nav-button:active{
-        width: 5.5rem;
-        filter: contrast(0) brightness(0.6);
-        animation-play-state: paused;
+    .nav-underline-active{
+    position: absolute;
+    width: 17rem;
+    height:auto;
+
+    --underline-translateX: 100px;
+
+    transform: translate(-50%, 140%);   
+
+
+    /* white filter */ 
+    filter: contrast(0) brightness(2);
+
+    transition: all 0.3s ease;
+
+    }
+
+   
+    .nav-button-active ~ h1{
+        transform: translate(-50%, 10%);
+        font-size: 1.5rem;
+        color: white;
+        text-shadow: 3px 3px #1d1a1a;
+
+    }
+
+
+
+    .nav-button-active {
+         position: absolute;
+    width: 6.6rem;
+    height: auto;
+
+    transform: translate(-48.6%, -50%);
+    transition: all 0.3s ease;
     }

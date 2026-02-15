@@ -1,0 +1,90 @@
+.tabs {
+
+padding-top: 15rem;
+
+    width: 80%;
+    height: 70%;
+
+}
+
+
+
+.home {
+top: 20%;
+width: 80rem;
+height: 40rem;
+background: rgba(85, 0, 0, 0.53);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+transition:all 0.2s ease-in-out;
+}
+
+
+.home:before{
+
+width: 20rem;
+
+}
+
+.projects{
+top: 20%;
+width: 80rem;
+height: 40rem;
+
+background: rgba(178, 201, 0, 0.53);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+transition:all 0.2s ease-in-out;
+
+    
+}
+
+.models {
+top: 20%;
+width: 80rem;
+height: 40rem;
+background: rgba(0, 201, 20, 0.47);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+    
+transition:all 0.2s ease-in-out;
+}
+
+.faq {
+top: 20%;
+width: 80rem;
+height: 40rem;
+background: rgba(13, 0, 201, 0.53);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+transition:all 0.2s ease-in-out;
+}
+.contact {
+top: 20%;
+width: 80rem;
+height: 40rem;
+background: rgba(201, 0, 181, 0.53);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+transition:all 0.2s ease-in-out;
+}
