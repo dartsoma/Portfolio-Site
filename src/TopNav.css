@@ -13,15 +13,13 @@
 
               user-select: none;
 
-              /*anti highlight
-  /* Firefox prefix */
+        /*anti highlight*/
   -moz-user-select: none;
-  /* Webkit (Safari, Chrome) and Opera prefix */
   -webkit-user-select: none;
-  /* IE/Edge prefix */
   -ms-user-select: none;
-  /* Konqueror HTML prefix */
-  -khtml-user-select: none;
+  user-select: none;
+   -webkit-app-region: no-drag;
+   -webkit-user-drag: none;
     }
 
     .nav-button-container{
@@ -33,7 +31,7 @@
 
     }
 
-    .nav-button-container h1{
+    .nav-button-container .nav-text{
         position: absolute;
         transform: translateX(-50%);
         text-align: center;
@@ -44,7 +42,7 @@
         text-shadow: 2px 2px #1d1a1a;
 
         color: rgb(192, 192, 192);
-        transition: all 0.3s ease;
+        transition: all 0.15s ease;
     }
 
 
@@ -61,7 +59,7 @@
     /* white filter */ 
     filter: contrast(0) brightness(1);
 
-    transition: all 0.3s ease;
+    transition: all 0.15s ease;
     }
 
     .nav-button {
@@ -70,27 +68,62 @@
     height: auto;
 
     transform: translate(-48.6%, -50%);
-    transition: all 0.3s ease;
+    transition: all 0.15s ease;
     }
 
-    .nav-button:hover ~ .nav-underline{
+     .invisible-button:hover ~ .nav-underline{
         width: 10rem;
         transform: translate(-50%, 120%) translateY(10px);
         filter: contrast(0) brightness(2);
 
     }
 
-    .nav-button:hover ~ h1 {
+     .invisible-button:hover ~ .nav-text {
         transform: translate(-50%, -5%);
         font-size: 1.3rem;
         color: white;
 
     }
     
-    .nav-button:hover{
+     .invisible-button:hover ~ .nav-button{
         width: 4rem;
         filter: contrast(0) brightness(0.3);
 
+    }
+
+
+    
+     .invisible-button:active ~ .nav-underline{
+        width: 9rem;
+        transform: translate(-50%, 120%) translateY(10px);
+        filter: contrast(0) brightness(2);
+
+    }
+
+     .invisible-button:active ~ .nav-text {
+        transform: translate(-50%, -5%);
+        font-size: 1.1rem;
+        color: white;
+
+    }
+    
+    .invisible-button:active ~ .nav-button{
+        width: 3.5rem;
+        filter: contrast(0) brightness(0.2);
+
+    }
+
+        .invisible-button {
+
+    position: absolute;
+    width: 5rem;
+    height: auto;
+         filter: contrast(0) brightness(2);
+
+    transform: translate(-48.6%, -50%);
+    transition: all 0.15s ease;
+    z-index: 99;
+      opacity: 0;
     }
 
     .nav-underline-active{
@@ -106,26 +139,38 @@
     /* white filter */ 
     filter: contrast(0) brightness(2);
 
-    transition: all 0.3s ease;
-
+    transition: all 0.15s ease;
     }
 
    
-    .nav-button-active ~ h1{
+    .nav-text-active{
+        position: absolute;
+        transform: translateX(-50%);
+        text-align: center;
+        top: 0;
+        padding-top: 3rem;
+        font-weight: 600;
+
+        color: rgb(192, 192, 192);
+        transition: all 0.15s ease;
+       
+       
         transform: translate(-50%, 10%);
         font-size: 1.5rem;
         color: white;
         text-shadow: 3px 3px #1d1a1a;
+
+        transition: all 0.15s ease;
 
     }
 
 
 
     .nav-button-active {
-         position: absolute;
+    position: absolute;
     width: 6.6rem;
     height: auto;
 
     transform: translate(-48.6%, -50%);
-    transition: all 0.3s ease;
+    transition: all 0.15s ease;
     }
