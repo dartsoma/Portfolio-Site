@@ -1,32 +1,43 @@
 .tabs {
 
-padding-top: 15rem;
+padding-top: 13rem;
+margin-top: 15rem;
 
-    width: 80%;
-    height: 70%;
-
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow-y: hidden; 
+-ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
+.page {
+margin-top: 5rem;
+margin-bottom: 5rem;
+position:relative;
+}
 
-
-.home {
+.home .page {
 top: 20%;
+
 width: 80rem;
-height: 40rem;
-background: rgba(85, 0, 0, 0.53);
+height: 45rem;
+background: rgba(43, 1, 1, 0.76);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
-
 transition:all 0.2s ease-in-out;
 }
 
-.projects{
+
+
+
+.projects .page{
 top: 20%;
 width: 80rem;
-height: 40rem;
+height: 45rem;
 
 background: rgba(178, 201, 0, 0.53);
 border-radius: 16px;
@@ -40,10 +51,10 @@ transition:all 0.2s ease-in-out;
     
 }
 
-.models {
+.models .page{
 top: 20%;
 width: 80rem;
-height: 40rem;
+height: 45rem;
 background: rgba(0, 201, 20, 0.47);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -55,10 +66,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 transition:all 0.2s ease-in-out;
 }
 
-.faq {
+.faq .page{
 top: 20%;
 width: 80rem;
-height: 40rem;
+height: 45rem;
 background: rgba(13, 0, 201, 0.53);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -68,10 +79,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 transition:all 0.2s ease-in-out;
 }
-.contact {
+.contact .page{
 top: 20%;
 width: 80rem;
-height: 40rem;
+height: 45rem;
 background: rgba(201, 0, 181, 0.53);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

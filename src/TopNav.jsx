@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import "./TopNav.css";
+import "./assets/TopNav.css";
 import bracket from "./assets/bracket.png";
 import placeholder from "./assets/placeholdericon.png";
 

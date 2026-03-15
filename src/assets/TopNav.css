@@ -1,6 +1,7 @@
     /* I fixed the issues with the nav bar being off center*/
     /* From now on use rem units for everything in this file that is proportion heavy */
     .top-nav {
+        z-index: 9999;
         position: absolute;
         top: 0;
         left: 0;
