@@ -51,6 +51,7 @@ function Tab({ globalTab, globalPage }) {
   useEffect(() => {
     pageRefs.current[globalPage]?.scrollIntoView({
       behavior: "smooth",
+      block: "center",
     });
   }, [globalPage]);
 
@@ -63,7 +64,7 @@ function Tab({ globalTab, globalPage }) {
               <div
                 key={i}
                 ref={(el) => (pageRefs.current[i] = el)}
-                className="page"
+                className={`page ${i === globalPage ? "active" : ""}`}
               >
                 {content}
               </div>
@@ -76,7 +77,7 @@ function Tab({ globalTab, globalPage }) {
               <div
                 key={i}
                 ref={(el) => (pageRefs.current[i] = el)}
-                className="page"
+                className={`page ${i === globalPage ? "active" : ""}`}
               >
                 {content}
               </div>
@@ -89,7 +90,7 @@ function Tab({ globalTab, globalPage }) {
               <div
                 key={i}
                 ref={(el) => (pageRefs.current[i] = el)}
-                className="page"
+                className={`page ${i === globalPage ? "active" : ""}`}
               >
                 {content}
               </div>
@@ -102,7 +103,7 @@ function Tab({ globalTab, globalPage }) {
               <div
                 key={i}
                 ref={(el) => (pageRefs.current[i] = el)}
-                className="page"
+                className={`page ${i === globalPage ? "active" : ""}`}
               >
                 {content}
               </div>
@@ -115,7 +116,7 @@ function Tab({ globalTab, globalPage }) {
               <div
                 key={i}
                 ref={(el) => (pageRefs.current[i] = el)}
-                className="page"
+                className={`page ${i === globalPage ? "active" : ""}`}
               >
                 {content}
               </div>

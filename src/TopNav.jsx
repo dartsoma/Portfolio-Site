@@ -2,7 +2,7 @@ import "./assets/TopNav.css";
 import bracket from "./assets/bracket.png";
 import placeholder from "./assets/placeholdericon.png";
 
-function TopNav({ globalTab, setTabState }) {
+function TopNav({ globalTab, setTabState, setPageState }) {
   const toggleTab = (index) => {
     setTabState(index);
   };
@@ -19,7 +19,10 @@ function TopNav({ globalTab, setTabState }) {
         <div className="nav-button-container">
           <img
             className="invisible-button"
-            onClick={() => toggleTab(faq)}
+            onClick={() => {
+              toggleTab(faq);
+              setPageState(0);
+            }}
             src={placeholder}
           />
           <img
@@ -42,7 +45,10 @@ function TopNav({ globalTab, setTabState }) {
         <div className="nav-button-container">
           <img
             className="invisible-button"
-            onClick={() => toggleTab(models)}
+            onClick={() => {
+              toggleTab(models);
+              setPageState(0);
+            }}
             src={placeholder}
           />
           <img
@@ -67,7 +73,10 @@ function TopNav({ globalTab, setTabState }) {
         <div className="nav-button-container">
           <img
             className="invisible-button"
-            onClick={() => toggleTab(home)}
+            onClick={() => {
+              toggleTab(home);
+              setPageState(0);
+            }}
             src={placeholder}
           />
           <img
@@ -90,7 +99,10 @@ function TopNav({ globalTab, setTabState }) {
         <div className="nav-button-container">
           <img
             className="invisible-button"
-            onClick={() => toggleTab(projects)}
+            onClick={() => {
+              toggleTab(projects);
+              setPageState(0);
+            }}
             src={placeholder}
           />
           <img
@@ -116,7 +128,10 @@ function TopNav({ globalTab, setTabState }) {
         <div className="nav-button-container">
           <img
             className="invisible-button"
-            onClick={() => toggleTab(contact)}
+            onClick={() => {
+              toggleTab(contact);
+              setPageState(0);
+            }}
             src={placeholder}
           />
           <img

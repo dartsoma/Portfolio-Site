@@ -1,0 +1,101 @@
+
+/* I fixed the issues with the nav bar being off center*/
+/* From now on use rem units for everything in this file that is proportion heavy */
+.side-nav {
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-app-region: no-drag;
+    -webkit-user-drag: none;
+}
+
+.side-nav .nav-button-container {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.side-nav .nav-button-container .nav-text {
+    position: absolute;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 2px 2px #1d1a1a;
+    color: rgb(192, 192, 192);
+    transition: all 0.15s ease;
+}
+
+
+
+.side-nav .nav-button-container .nav-button {
+    position: absolute;
+    width: 5rem;
+    height: auto;
+
+    transition: all 0.15s ease;
+}
+
+
+
+.side-nav .invisible-button:hover ~ .nav-text {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.side-nav .invisible-button:hover ~ .nav-button {
+    width: 4rem;
+    filter: contrast(0) brightness(0.3);
+}
+
+
+.side-nav .invisible-button:active ~ .nav-text {
+
+    font-size: 1.1rem;
+    color: white;
+}
+
+.side-nav .invisible-button:active ~ .nav-button {
+    width: 3.5rem;
+    filter: contrast(0) brightness(0.2);
+}
+
+.side-nav .invisible-button {
+    position: absolute;
+    width: 5rem;
+    height: auto;
+    filter: contrast(0) brightness(2);
+    transition: all 0.15s ease;
+    z-index: 99;
+    opacity: 0;
+}
+
+.side-nav .nav-text-active {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding-top: 3rem;
+    font-weight: 600;
+    color: rgb(192, 192, 192);
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 3px 3px #1d1a1a;
+    transition: all 0.15s ease;
+}
+
+.side-nav .nav-button-active {
+    position: absolute;
+    width: 6.6rem;
+    height: auto;
+    transition: all 0.15s ease;
+}
