@@ -5,8 +5,8 @@
     z-index: 9999;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     left: 0;
-    height: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -22,80 +22,63 @@
 
 .side-nav .nav-button-container {
     position: relative;
+
     padding-top: 5rem;
     padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.side-nav .nav-button-container .nav-text {
+.nav-button, .nav-button-active {
+
+    width: 10rem;
+    height: auto;
+
+}
+
+
+
+.side-nav  .nav-button {
     position: absolute;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    text-shadow: 2px 2px #1d1a1a;
-    color: rgb(192, 192, 192);
+
+    transform: rotate(-90deg) translateY(170%);
+    filter: contrast(0) brightness(0);
     transition: all 0.15s ease;
 }
 
 
 
-.side-nav .nav-button-container .nav-button {
+ .side-nav .nav-button-active {
     position: absolute;
-    width: 5rem;
-    height: auto;
-
+    transform: rotate(-90deg) translateY(190%);
+    filter: contrast(0) brightness(2);
     transition: all 0.15s ease;
 }
 
 
-
-.side-nav .invisible-button:hover ~ .nav-text {
-    font-size: 1.3rem;
-    color: white;
-}
-
-.side-nav .invisible-button:hover ~ .nav-button {
-    width: 4rem;
-    filter: contrast(0) brightness(0.3);
-}
-
-
-.side-nav .invisible-button:active ~ .nav-text {
-
-    font-size: 1.1rem;
-    color: white;
-}
-
-.side-nav .invisible-button:active ~ .nav-button {
-    width: 3.5rem;
-    filter: contrast(0) brightness(0.2);
-}
-
-.side-nav .invisible-button {
+ .side-nav .invisible-button {
     position: absolute;
-    width: 5rem;
-    height: auto;
+    width: 7rem;
+    height: 7rem;
     filter: contrast(0) brightness(2);
     transition: all 0.15s ease;
     z-index: 99;
     opacity: 0;
 }
 
-.side-nav .nav-text-active {
-    position: absolute;
-    text-align: center;
-    top: 0;
-    padding-top: 3rem;
-    font-weight: 600;
-    color: rgb(192, 192, 192);
-    font-size: 1.5rem;
-    color: white;
-    text-shadow: 3px 3px #1d1a1a;
+.side-nav .invisible-button:hover ~ .nav-button {
+      position: absolute;
+
+    transform: rotate(-90deg) translateY(420%);
+    filter: contrast(0) brightness(0.2);
     transition: all 0.15s ease;
 }
 
-.side-nav .nav-button-active {
-    position: absolute;
-    width: 6.6rem;
-    height: auto;
-    transition: all 0.15s ease;
+.side-nav .invisible-button:active ~ .nav-button {
+    transform: rotate(-90deg) translateY(480%);
+    filter: contrast(0) brightness(1);
 }
+
+
+

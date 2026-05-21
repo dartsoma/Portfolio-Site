@@ -1,5 +1,6 @@
 import "./assets/SideNav.css";
 import placeholder from "./assets/placeholdericon.png";
+import bracket from "./assets/bracket.png";
 
 function SideNav({ globalPage, setPageState, pageCount }) {
   return (
@@ -14,11 +15,11 @@ function SideNav({ globalPage, setPageState, pageCount }) {
             />
             <img
               className={globalPage === i ? "nav-button-active" : "nav-button"}
-              src={placeholder}
+              src={bracket}
             />
-            <h1 className={globalPage === i ? "nav-text-active" : "nav-text"}>
+            <p className={globalPage === i ? "nav-text-active" : "nav-text"}>
               {i + 1}
-            </h1>
+            </p>
           </div>
         ))}
       </div>

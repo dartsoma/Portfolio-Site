@@ -20,14 +20,15 @@
     -webkit-user-drag: none;
 }
 
-.nav-button-container {
+
+.top-nav .nav-button-container {
     position: relative;
     padding-top: 0rem;
     padding-left: 5rem;
     padding-right: 5rem;
 }
 
-.nav-button-container .nav-text {
+.top-nav .nav-button-container .nav-text {
     position: absolute;
     transform: translateX(-50%);
     text-align: center;
@@ -40,17 +41,17 @@
     transition: all 0.15s ease;
 }
 
-.nav-underline {
+.top-nav .nav-underline {
     position: absolute;
     width: 12rem;
     height: auto;
     --underline-translateX: 100px;
     transform: translate(-50%, 120%);
-    filter: contrast(0) brightness(1);
+    filter: contrast(0) brightness(0);
     transition: all 0.15s ease;
 }
 
-.nav-button {
+.top-nav .nav-button {
     position: absolute;
     width: 5rem;
     height: auto;
@@ -58,41 +59,41 @@
     transition: all 0.15s ease;
 }
 
-.invisible-button:hover ~ .nav-underline {
+.top-nav .invisible-button:hover ~ .nav-underline {
     width: 10rem;
     transform: translate(-50%, 120%) translateY(10px);
-    filter: contrast(0) brightness(2);
+    filter: contrast(0) brightness(0.3);
 }
 
-.invisible-button:hover ~ .nav-text {
+.top-nav .invisible-button:hover ~ .nav-text {
     transform: translate(-50%, -5%);
     font-size: 1.3rem;
     color: white;
 }
 
-.invisible-button:hover ~ .nav-button {
+.top-nav .invisible-button:hover ~ .nav-button {
     width: 4rem;
     filter: contrast(0) brightness(0.3);
 }
 
-.invisible-button:active ~ .nav-underline {
+.top-nav .invisible-button:active ~ .nav-underline {
     width: 9rem;
     transform: translate(-50%, 120%) translateY(10px);
     filter: contrast(0) brightness(2);
 }
 
-.invisible-button:active ~ .nav-text {
+.top-nav .invisible-button:active ~ .nav-text {
     transform: translate(-50%, -5%);
     font-size: 1.1rem;
     color: white;
 }
 
-.invisible-button:active ~ .nav-button {
+.top-nav .invisible-button:active ~ .nav-button {
     width: 3.5rem;
     filter: contrast(0) brightness(0.2);
 }
 
-.invisible-button {
+.top-nav .invisible-button {
     position: absolute;
     width: 5rem;
     height: auto;
@@ -103,7 +104,7 @@
     opacity: 0;
 }
 
-.nav-underline-active {
+.top-nav .nav-underline-active {
     position: absolute;
     width: 17rem;
     height: auto;
@@ -113,7 +114,7 @@
     transition: all 0.15s ease;
 }
 
-.nav-text-active {
+.top-nav .nav-text-active {
     position: absolute;
     transform: translateX(-50%);
     text-align: center;
@@ -128,7 +129,7 @@
     transition: all 0.15s ease;
 }
 
-.nav-button-active {
+.top-nav .nav-button-active {
     position: absolute;
     width: 6.6rem;
     height: auto;

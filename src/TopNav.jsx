@@ -1,6 +1,11 @@
 import "./assets/TopNav.css";
 import bracket from "./assets/bracket.png";
 import placeholder from "./assets/placeholdericon.png";
+import model_icon from "./assets/model_icon.png";
+import faq_icon from "./assets/faq_icon.png";
+import contact_icon from "./assets/contact_icon.png";
+import project_icon from "./assets/project_icon.png";
+import home_icon from "./assets/home_icon.png";
 
 function TopNav({ globalTab, setTabState, setPageState }) {
   const toggleTab = (index) => {
@@ -27,7 +32,7 @@ function TopNav({ globalTab, setTabState, setPageState }) {
           />
           <img
             className={globalTab === faq ? "nav-button-active" : "nav-button"}
-            src={placeholder}
+            src={faq_icon}
           />
           <img
             className={
@@ -55,7 +60,7 @@ function TopNav({ globalTab, setTabState, setPageState }) {
             className={
               globalTab === models ? "nav-button-active" : "nav-button"
             }
-            src={placeholder}
+            src={model_icon}
           />
           <img
             className={
@@ -81,7 +86,7 @@ function TopNav({ globalTab, setTabState, setPageState }) {
           />
           <img
             className={globalTab === home ? "nav-button-active" : "nav-button"}
-            src={placeholder}
+            src={home_icon}
           />
           <img
             className={
@@ -109,7 +114,7 @@ function TopNav({ globalTab, setTabState, setPageState }) {
             className={
               globalTab === projects ? "nav-button-active" : "nav-button"
             }
-            src={placeholder}
+            src={project_icon}
           />
           <img
             className={
@@ -138,7 +143,7 @@ function TopNav({ globalTab, setTabState, setPageState }) {
             className={
               globalTab === contact ? "nav-button-active" : "nav-button"
             }
-            src={placeholder}
+            src={contact_icon}
           />
           <img
             className={
