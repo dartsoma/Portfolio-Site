@@ -2,11 +2,11 @@ import "./assets/Tab.css";
 import { useRef, useEffect } from "react";
 
 function Tab({ globalTab, globalPage }) {
-  // The pages of each array will be
+  // The pages of each tab will be
 
   const home = [
     <>
-      <h1> Content 1</h1>
+      <h1 id="name">CHAD-SOMA FOSTER</h1>
     </>,
     <>
       <h1> Content 2</h1>

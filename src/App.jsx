@@ -31,6 +31,7 @@ function App() {
         globalPage={globalPageNumber}
         setPageState={setGlobalPageNumber}
         pageCount={pageCount}
+        tabNum={globalTabNumber}
       />
     </>
   );

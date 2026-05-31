@@ -1,8 +1,11 @@
 import "./assets/SideNav.css";
 import placeholder from "./assets/placeholdericon.png";
-import bracket from "./assets/bracket.png";
+import sidebar from "./assets/sidebar.png";
 
-function SideNav({ globalPage, setPageState, pageCount }) {
+function SideNav({ globalPage, setPageState, pageCount, tabNum }) {
+  const home = ["Home", "About Me", "Resume"];
+  const homeId = tabNum === 0 ? "home-button" : <nav-button></nav-button>;
+
   return (
     <>
       <div className="side-nav">
@@ -14,11 +17,19 @@ function SideNav({ globalPage, setPageState, pageCount }) {
               src={placeholder}
             />
             <img
-              className={globalPage === i ? "nav-button-active" : "nav-button"}
-              src={bracket}
+              className={
+                tabNum === 0
+                  ? globalPage === i
+                    ? "home-nav-active"
+                    : "home-nav"
+                  : globalPage === i
+                    ? "nav-button-active"
+                    : "nav-button"
+              }
+              src={sidebar}
             />
             <p className={globalPage === i ? "nav-text-active" : "nav-text"}>
-              {i + 1}
+              {tabNum === 0 ? home[i] : i + 1}
             </p>
           </div>
         ))}

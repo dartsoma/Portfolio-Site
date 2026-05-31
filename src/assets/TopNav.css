@@ -38,7 +38,7 @@
     font-weight: 600;
     text-shadow: 2px 2px #1d1a1a;
     color: rgb(192, 192, 192);
-    transition: all 0.15s ease;
+    transition: all 0.25s ease;
 }
 
 .top-nav .nav-underline {
@@ -48,7 +48,7 @@
     --underline-translateX: 100px;
     transform: translate(-50%, 120%);
     filter: contrast(0) brightness(0);
-    transition: all 0.15s ease;
+    transition: all 0.25s ease;
 }
 
 .top-nav .nav-button {
@@ -56,7 +56,7 @@
     width: 5rem;
     height: auto;
     transform: translate(-48.6%, -50%);
-    transition: all 0.15s ease;
+    transition: all 0.35s ease;
 }
 
 .top-nav .invisible-button:hover ~ .nav-underline {
@@ -73,7 +73,7 @@
 
 .top-nav .invisible-button:hover ~ .nav-button {
     width: 4rem;
-    filter: contrast(0) brightness(0.3);
+    filter: brightness(0.3);
 }
 
 .top-nav .invisible-button:active ~ .nav-underline {
@@ -90,7 +90,7 @@
 
 .top-nav .invisible-button:active ~ .nav-button {
     width: 3.5rem;
-    filter: contrast(0) brightness(0.2);
+    filter: brightness(2);
 }
 
 .top-nav .invisible-button {
@@ -99,7 +99,7 @@
     height: auto;
     filter: contrast(0) brightness(2);
     transform: translate(-48.6%, -50%);
-    transition: all 0.15s ease;
+    transition: all 0.35s ease;
     z-index: 99;
     opacity: 0;
 }
@@ -111,7 +111,7 @@
     --underline-translateX: 100px;
     transform: translate(-50%, 140%);
     filter: contrast(0) brightness(2);
-    transition: all 0.15s ease;
+    transition: all 0.35s ease;
 }
 
 .top-nav .nav-text-active {
